@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Ohmyfood! est une entreprise de réservation de restaurants et de composition de menus",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EkaterinaBobkova/ohmyfood.git"
+  },
+  "author": "Ekaterina Bobkova",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/EkaterinaBobkova/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/EkaterinaBobkova/ohmyfood#readme"
+}
