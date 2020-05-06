@@ -303,6 +303,13 @@ a {
       color: $color-title-menu1;
       margin-bottom: 40px;
      }
+
+     .menu-table-title {
+      position: relative;
+      white-space: nowrap;
+      margin: 0 1em;
+      font-weight: 900;
+    }
      .carte-menu1 .menu-table-title
      {
        text-align: center;
@@ -318,16 +325,14 @@ a {
       }
        
 
-      .menu1-line-left
+      .menu-line
       {
-      margin-right: 50px ;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
       }
 
-      .menu1-line-right
-      {
-      margin-left: 50px ;
-      }
-
+      
 
 
       /*MENU 2*/
@@ -451,17 +456,11 @@ a {
           width: 80%;
           font-size: 0.6em;
         }
-        .menu1-line-left{
-          width: 30px;
-          height: 5px;
-          margin-right: 10px;
-        }
-        .menu1-line-right{
-          width: 30px;
-          height: 5px;
-          margin-left: 10px;
-        }
+       
+       
 
+
+        
         .carte-menu2 .carte-menu-header-titre
         {
           font-size: 2.5em;
@@ -485,16 +484,7 @@ a {
           width: 60%;
           font-size: 0.7em;
         }
-        .menu1-line-left{
-          width: 30px;
-          height: 5px;
-          margin-right: 15px;
-        }
-        .menu1-line-right{
-          width: 30px;
-          height: 5px;
-          margin-left: 15px;
-        }
+        
       }
 
 

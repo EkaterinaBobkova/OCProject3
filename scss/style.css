@@ -298,6 +298,13 @@ li {
   margin-bottom: 40px;
 }
 
+.menu-table-title {
+  position: relative;
+  white-space: nowrap;
+  margin: 0 1em;
+  font-weight: 900;
+}
+
 .carte-menu1 .menu-table-title {
   text-align: center;
   font-weight: bold;
@@ -310,12 +317,10 @@ li {
   font-style: italic;
 }
 
-.menu1-line-left {
-  margin-right: 50px;
-}
-
-.menu1-line-right {
-  margin-left: 50px;
+.menu-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 /*MENU 2*/
@@ -426,18 +431,6 @@ li {
     font-size: 0.6em;
   }
 
-  .menu1-line-left {
-    width: 30px;
-    height: 5px;
-    margin-right: 10px;
-  }
-
-  .menu1-line-right {
-    width: 30px;
-    height: 5px;
-    margin-left: 10px;
-  }
-
   .carte-menu2 .carte-menu-header-titre {
     font-size: 2.5em;
   }
@@ -455,18 +448,6 @@ li {
     padding: 3em;
     width: 60%;
     font-size: 0.7em;
-  }
-
-  .menu1-line-left {
-    width: 30px;
-    height: 5px;
-    margin-right: 15px;
-  }
-
-  .menu1-line-right {
-    width: 30px;
-    height: 5px;
-    margin-left: 15px;
   }
 }
 /*BOUTON*/
