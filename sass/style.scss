@@ -55,6 +55,13 @@ $color-title-menu3: #0887fb;
 $color-title-menu4:#5eae4b;
 
 
+/*MIXINS*/
+
+@mixin shadow {
+  box-shadow: 0 0 10px 0 rgba(152, 153, 151, 0.6);
+}
+
+
 /*GENERAL*/
 body{
     font-family:  Helvetica, Arial, sans-serif;
@@ -140,7 +147,7 @@ a {
     width: 50%;
     border-radius: 0.2em;
     line-height: 50px;
-    box-shadow: 0 0 10px 0 rgba(152, 153, 151, 0.6);
+    @include shadow;
 
     @media (max-width: 738px) {
       width: 65%;
@@ -282,9 +289,23 @@ width: 60%;
   width: 60%;
   
   line-height: 2em;
-  box-shadow: 0 0 10px 0 rgba(152, 153, 151, 0.6);
+  @include shadow;
   text-align: justify;
+
+  @media (max-width: 750px) {
+      padding: 3em;
+      width: 80%;
+      font-size: 0.6em;
     }
+
+    @media screen and (min-width:752px)
+    and (max-width:1200px) {
+          padding: 3em;
+          width: 60%;
+          font-size: 0.7em;
+        }
+    }
+
      .menu-section{
        margin-top: 3em;
       text-align: center;
@@ -459,17 +480,7 @@ width: 60%;
         font-size: 1.5em;
       }
 
-      @media (max-width: 750px) {
-        .carte-menu {
-          padding: 3em;
-          width: 80%;
-          font-size: 0.6em;
-        }
-       
-       
-
-
-        
+      
         .carte-menu2 .carte-menu-header-titre
         {
           font-size: 2.5em;
@@ -484,18 +495,7 @@ width: 60%;
         {
           font-size: 2.4em;
         }
-      }
-
-      @media screen and (min-width:752px)
-    and (max-width:1200px) {
-        .carte-menu {
-          padding: 3em;
-          width: 60%;
-          font-size: 0.7em;
-        }
-        
-      }
-
+      
 
     /*BOUTON*/
 
@@ -512,26 +512,23 @@ width: 60%;
       font-size: 1.30rem;
       color: $text-color-primary;
       border-radius: 0.5em;
-    }
 
-    @media (min-width: 768px) {
-      .btn-main {
-        font-size: 1.350rem;
+      @media (min-width: 768px) {
+          font-size: 1.350rem;
       }
-    }
-    @media (min-width: 992px) {
-      .btn-main {
-        font-size: 1.6rem;
+
+      @media (min-width: 992px) {
+          font-size: 1.6rem;
       }
-    }
-    @media (min-width: 1200px) {
-      .btn-main {
-        font-size: 1.710rem;
+
+      @media (min-width: 1200px) {
+          font-size: 1.710rem;
       }
     }
 
-
+    
     /* FOOTER */
+
   .footer {
     display: flex;
     flex-wrap: wrap;
@@ -541,42 +538,34 @@ width: 60%;
     padding: 0.5em 0;
     left: 0;
     bottom: 0;
-  }
-  @media (min-width: 768px) {
-    .footer {
-     
-    justify-content: space-between;
-    padding: 0;
+
+    @media (min-width: 768px) {
+      justify-content: space-between;
+      padding: 0;
     }
   }
+  
   .footer-info {
     padding: 0 2em 0.2em;
     font-size: 1rem;
-    animation: wiggle 80ms infinite;
-    animation-timing-function: linear;
-  }
-  @media (min-width: 768px) {
-    .footer-info {
-      padding: 0.8em 1em;
-      font-size: 1.120rem;
-      transform: translate(2px, 0);
+    
+
+    @media (min-width: 768px) {
+        padding: 0.8em 1em;
+        font-size: 1.120rem;
+       
+    }
+
+    @media (min-width: 992px) {
+        font-size: 1.20rem;
+       
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 1.360rem
     }
   }
-  @media (min-width: 992px) {
-    .footer-info {
-      font-size: 1.20rem;
-      animation: none;
-    }
-    .footer-info:hover {
-      animation: wiggle 80ms infinite;
-      animation-timing-function: linear;
-    }
-  }
-  @media (min-width: 1200px) {
-    .footer-info {
-      font-size: 1.350rem
-    }
-  }
+  
   .footer-info-link {
     color: $text-color-primary;
   }
@@ -587,6 +576,8 @@ width: 60%;
   /*ANIMATIONS*/
 
   
+
+    /*ZOOM SUR LES TITRES*/
   
   .nav-carte-item-link {
     opacity: 1.2;
@@ -599,8 +590,112 @@ width: 60%;
   }
   .nav-carte-item-link:hover {
     opacity: 0.7;
-    -webkit-transform: scale(1.15);
-        -ms-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(1.10);
+        -ms-transform: scale(1.10);
+            transform: scale(1.10);
   }
   
+/*SOULIGNEMENT TITRES MENUS*/
+
+.menu-table-title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  transition: width 600ms ease;
+}
+
+.menu-table-title.menu-line1:hover:after{
+  background-color:#f04c5f;
+}
+.menu-table-title.menu-line2-1:hover:after{
+  background-color: $color-title-menu2;
+}
+.menu-table-title.menu-line2-2:hover:after{
+  background-color:#a86698;
+}
+.menu-table-title.menu-line2-3:hover:after{
+  background-color:#3a4fa2;
+}
+.menu-table-title.menu-line3-1:hover:after{
+  background-color:#0228dd;
+}
+.menu-table-title.menu-line3-2:hover:after{
+  background-color:#0670f3;
+}
+.menu-table-title.menu-line3-3:hover:after{
+  background-color:#229df9;
+}
+.menu-table-title.menu-line4:hover:after{
+  background-color:#7dc85d;
+}
+ 
+ 
+.menu-table-title:hover:after {
+  width: 100%;
+}
+
+
+
+
+   /*POINTS DE SUSPENSION BOUTON*/
+
+   .one {
+    opacity: 0;
+    -webkit-animation: dots 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dots 1.3s infinite;
+    animation-delay: 0.0s;
+}
+
+.two {
+    opacity: 0;
+    -webkit-animation: dots 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+      animation: dots 1.3s infinite;
+      animation-delay: 0.2s;
+}
+
+.three {
+    opacity: 0;
+    -webkit-animation: dots 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+     animation: dots 1.3s infinite;
+     animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dots {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes dots {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+/*EFFET WIGGLE*/
+
+.footer-info:hover{
+ animation: wiggle 0.8s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
