@@ -96,25 +96,23 @@ a {
 
 /*HEADER*/
 
-  .header, .btn-main, .footer
+  .header, .btn--main, .footer
   {
       background-color: $color-primary;
       
   }
 
-  .titre-header {
+  .titre_header {
     padding: 0.3em;
     text-align: center;
     font-size: 2rem;
     font-weight: 900;
+
+    &--link {
+    color: $text-color-primary;
+    }
+    
   }
-
-  .titre-header-link
-  {
-      color: $text-color-primary;
-  }
-
-
 
 
   /*ACCUEIL*/
@@ -133,9 +131,8 @@ a {
     @media (min-width: 1200px) {
       width: 60%;
   }
-  }
 
-  .nav-carte-item
+  &_item
   {
     display: flex;
     flex-wrap: wrap;
@@ -157,12 +154,9 @@ a {
     width: 40%;
     height: 75vmin;
 }
-  }
 
-
-  .nav-carte-item-titre
-  {
-    font-size: 1.6rem;
+&--titre{
+  font-size: 1.5rem;
     @media (max-width: 375px) {
       font-size: 0.9rem;
   }
@@ -170,91 +164,97 @@ a {
   and (max-width:740px) {
     font-size: 1.5rem;
 }
-  }
-  
-  .nav-carte-item-menu
-  {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    @media (max-width: 375px) {
-      font-size: 0.7rem;
-  }
-  @media screen and (min-width:400px)
-  and (max-width:740px) {
-    font-size: 1rem;
 }
-  }
-  .nav-carte-item-menu1
-  {
+&--menu{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+
+
+@media (max-width: 375px) {
+  font-size: 0.7rem;
+}
+@media screen and (min-width:400px)
+and (max-width:740px) {
+font-size: 1rem;
+}
+}
+
+
+&--menu1
+{
     background-color: $color-menu1;
     line-height: 35px;
-  }
 
-  .nav-carte-item-menu1 .nav-carte-item-titre,
-   {
-  color:$color-title-menu1;
-  font-family: 'Devonshire-Regular';
+    .nav-carte_item--titre
+    {
+      color:$color-title-menu1;
+      font-family: 'Devonshire-Regular';
+    }
+
+    .nav-carte_item--menu{
+      font-family: 'open_sanssemibold', Arial, sans-serif;
+      color:$color-title-menu1;
+    }
 }
 
-.nav-carte-item-menu1 .nav-carte-item-menu
-{
-  font-family: 'open_sanssemibold', Arial, sans-serif;
-  color:$color-title-menu1;
-}
+&--menu2{
+  background-color: $color-menu2;
 
-  .nav-carte-item-menu2
-  {
-    background-color: $color-menu2;
-  }
-
-  .nav-carte-item-menu2 .nav-carte-item-titre {
+  .nav-carte_item--titre{
     font-family: 'open_sanssemibold', Arial, sans-serif;
     color: $color-title-menu2;
     background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    
-    
+  -webkit-text-fill-color: transparent; 
   }
-  .nav-carte-item-menu2 .nav-carte-item-menu{
+
+  .nav-carte_item--menu{
     font-family: 'open_sanssemibold', Arial, sans-serif;
     color: $color-title-menu2;
-    
   }
+}
 
-  .nav-carte-item-menu3
-  {
-    background-color: $color-menu3;
-  }
+&--menu3 {
+  background-color: $color-menu3;
 
-  .nav-carte-item-menu3 .nav-carte-item-titre {
+
+  .nav-carte_item--titre{
     font-family: 'Parisienne-Regular'; 
     color: $color-title-menu3;
     background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   }
-  .nav-carte-item-menu3 .nav-carte-item-menu{
+
+  .nav-carte_item--menu{
     font-family: 'Tillana-Medium'; 
     color: $color-title-menu3;
-    
   }
-  .nav-carte-item-menu4
-  {
-    background-color: $color-menu4;
-  }
-  .nav-carte-item-menu4 .nav-carte-item-titre {
+}
+
+&--menu4{
+  background-color: $color-menu4;
+
+
+  .nav-carte_item--titre{
     font-family: 'Tillana-Medium';  
     color: $color-title-menu4;
     background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   }
-  .nav-carte-item-menu4 .nav-carte-item-menu{
+
+  .nav-carte_item--menu{
     font-family: 'Tillana-Medium';  
     color: $color-title-menu4;
-    
   }
+}
+  }
+
+  }
+
+  
+
 
   
   /* ARTICLE */
@@ -272,11 +272,13 @@ a {
 @media (min-width: 1200px) {
 width: 60%;
 }
-}
 
-.article__section {
+&_section{
   padding-bottom: 2em;
 }
+}
+
+
 
 
 
@@ -503,29 +505,29 @@ width: 60%;
       text-align: center;
       margin-top: -1em;
       margin-bottom: 5em;
+
+      &--main{
+        margin: 0 auto;
+        padding: 0.6em 1.6em;
+        font-size: 1.30rem;
+        color: $text-color-primary;
+        border-radius: 0.5em;
+  
+        @media (min-width: 768px) {
+            font-size: 1.350rem;
+        }
+  
+        @media (min-width: 992px) {
+            font-size: 1.6rem;
+        }
+  
+        @media (min-width: 1200px) {
+            font-size: 1.710rem;
+        }
+      }
     }
 
-    .btn-main
-    {
-      margin: 0 auto;
-      padding: 0.6em 1.6em;
-      font-size: 1.30rem;
-      color: $text-color-primary;
-      border-radius: 0.5em;
-
-      @media (min-width: 768px) {
-          font-size: 1.350rem;
-      }
-
-      @media (min-width: 992px) {
-          font-size: 1.6rem;
-      }
-
-      @media (min-width: 1200px) {
-          font-size: 1.710rem;
-      }
-    }
-
+    
     
     /* FOOTER */
 
@@ -543,34 +545,36 @@ width: 60%;
       justify-content: space-between;
       padding: 0;
     }
-  }
+
+    &_info {
+      padding: 0 2em 0.2em;
+      font-size: 1rem;
+      
   
-  .footer-info {
-    padding: 0 2em 0.2em;
-    font-size: 1rem;
+      @media (min-width: 768px) {
+          padding: 0.8em 1em;
+          font-size: 1.120rem;
+         
+      }
+  
+      @media (min-width: 992px) {
+          font-size: 1.20rem;
+         
+      }
+  
+      @media (min-width: 1200px) {
+          font-size: 1.360rem
+      }
+      &--link {
+        color: $text-color-primary;
+      }
+    }
     
-
-    @media (min-width: 768px) {
-        padding: 0.8em 1em;
-        font-size: 1.120rem;
-       
-    }
-
-    @media (min-width: 992px) {
-        font-size: 1.20rem;
-       
-    }
-
-    @media (min-width: 1200px) {
-        font-size: 1.360rem
-    }
+    
+  
   }
   
-  .footer-info-link {
-    color: $text-color-primary;
-  }
-
-
+  
 
 
   /*ANIMATIONS*/
@@ -579,7 +583,7 @@ width: 60%;
 
     /*ZOOM SUR LES TITRES*/
   
-  .nav-carte-item-link {
+  .nav-carte_item--link {
     opacity: 1.2;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -588,7 +592,7 @@ width: 60%;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
-  .nav-carte-item-link:hover {
+  .nav-carte_item--link:hover {
     opacity: 0.7;
     -webkit-transform: scale(1.10);
         -ms-transform: scale(1.10);
@@ -681,7 +685,7 @@ width: 60%;
 
 /*EFFET WIGGLE*/
 
-.footer-info:hover{
+.footer_info:hover{
  animation: wiggle 0.8s;
  animation-iteration-count: infinite;
 }

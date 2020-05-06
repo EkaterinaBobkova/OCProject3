@@ -104,18 +104,17 @@ li {
 }
 
 /*HEADER*/
-.header, .btn-main, .footer {
+.header, .btn--main, .footer {
   background-color: #579c87;
 }
 
-.titre-header {
+.titre_header {
   padding: 0.3em;
   text-align: center;
   font-size: 2rem;
   font-weight: 900;
 }
-
-.titre-header-link {
+.titre_header--link {
   color: #fdcb46;
 }
 
@@ -135,8 +134,7 @@ li {
     width: 60%;
   }
 }
-
-.nav-carte-item {
+.nav-carte_item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -150,109 +148,95 @@ li {
   box-shadow: 0 0 10px 0 rgba(152, 153, 151, 0.6);
 }
 @media (max-width: 738px) {
-  .nav-carte-item {
+  .nav-carte_item {
     width: 65%;
     height: 75vmin;
   }
 }
 @media (min-width: 740px) {
-  .nav-carte-item {
+  .nav-carte_item {
     width: 40%;
     height: 75vmin;
   }
 }
-
-.nav-carte-item-titre {
-  font-size: 1.6rem;
+.nav-carte_item--titre {
+  font-size: 1.5rem;
 }
 @media (max-width: 375px) {
-  .nav-carte-item-titre {
+  .nav-carte_item--titre {
     font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 740px) {
-  .nav-carte-item-titre {
+  .nav-carte_item--titre {
     font-size: 1.5rem;
   }
 }
-
-.nav-carte-item-menu {
+.nav-carte_item--menu {
   text-transform: uppercase;
   font-size: 1.4rem;
 }
 @media (max-width: 375px) {
-  .nav-carte-item-menu {
+  .nav-carte_item--menu {
     font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 400px) and (max-width: 740px) {
-  .nav-carte-item-menu {
+  .nav-carte_item--menu {
     font-size: 1rem;
   }
 }
-
-.nav-carte-item-menu1 {
+.nav-carte_item--menu1 {
   background-color: #fcdfdb;
   line-height: 35px;
 }
-
-.nav-carte-item-menu1 .nav-carte-item-titre {
+.nav-carte_item--menu1 .nav-carte_item--titre {
   color: #3c1218;
   font-family: "Devonshire-Regular";
 }
-
-.nav-carte-item-menu1 .nav-carte-item-menu {
+.nav-carte_item--menu1 .nav-carte_item--menu {
   font-family: "open_sanssemibold", Arial, sans-serif;
   color: #3c1218;
 }
-
-.nav-carte-item-menu2 {
+.nav-carte_item--menu2 {
   background-color: #fff5fe;
 }
-
-.nav-carte-item-menu2 .nav-carte-item-titre {
+.nav-carte_item--menu2 .nav-carte_item--titre {
   font-family: "open_sanssemibold", Arial, sans-serif;
   color: #c77412;
   background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.nav-carte-item-menu2 .nav-carte-item-menu {
+.nav-carte_item--menu2 .nav-carte_item--menu {
   font-family: "open_sanssemibold", Arial, sans-serif;
   color: #c77412;
 }
-
-.nav-carte-item-menu3 {
+.nav-carte_item--menu3 {
   background-color: #f9f9f9;
 }
-
-.nav-carte-item-menu3 .nav-carte-item-titre {
+.nav-carte_item--menu3 .nav-carte_item--titre {
   font-family: "Parisienne-Regular";
   color: #0887fb;
   background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.nav-carte-item-menu3 .nav-carte-item-menu {
+.nav-carte_item--menu3 .nav-carte_item--menu {
   font-family: "Tillana-Medium";
   color: #0887fb;
 }
-
-.nav-carte-item-menu4 {
+.nav-carte_item--menu4 {
   background-color: #fdfffd;
 }
-
-.nav-carte-item-menu4 .nav-carte-item-titre {
+.nav-carte_item--menu4 .nav-carte_item--titre {
   font-family: "Tillana-Medium";
   color: #5eae4b;
   background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.nav-carte-item-menu4 .nav-carte-item-menu {
+.nav-carte_item--menu4 .nav-carte_item--menu {
   font-family: "Tillana-Medium";
   color: #5eae4b;
 }
@@ -278,8 +262,7 @@ li {
     width: 60%;
   }
 }
-
-.article__section {
+.article_section {
   padding-bottom: 2em;
 }
 
@@ -477,8 +460,7 @@ li {
   margin-top: -1em;
   margin-bottom: 5em;
 }
-
-.btn-main {
+.btn--main {
   margin: 0 auto;
   padding: 0.6em 1.6em;
   font-size: 1.3rem;
@@ -486,17 +468,17 @@ li {
   border-radius: 0.5em;
 }
 @media (min-width: 768px) {
-  .btn-main {
+  .btn--main {
     font-size: 1.35rem;
   }
 }
 @media (min-width: 992px) {
-  .btn-main {
+  .btn--main {
     font-size: 1.6rem;
   }
 }
 @media (min-width: 1200px) {
-  .btn-main {
+  .btn--main {
     font-size: 1.71rem;
   }
 }
@@ -518,35 +500,33 @@ li {
     padding: 0;
   }
 }
-
-.footer-info {
+.footer_info {
   padding: 0 2em 0.2em;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
-  .footer-info {
+  .footer_info {
     padding: 0.8em 1em;
     font-size: 1.12rem;
   }
 }
 @media (min-width: 992px) {
-  .footer-info {
+  .footer_info {
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {
-  .footer-info {
+  .footer_info {
     font-size: 1.36rem;
   }
 }
-
-.footer-info-link {
+.footer_info--link {
   color: #fdcb46;
 }
 
 /*ANIMATIONS*/
 /*ZOOM SUR LES TITRES*/
-.nav-carte-item-link {
+.nav-carte_item--link {
   opacity: 1.2;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -556,7 +536,7 @@ li {
   transition: all 1s ease-in-out;
 }
 
-.nav-carte-item-link:hover {
+.nav-carte_item--link:hover {
   opacity: 0.7;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -658,7 +638,7 @@ li {
   }
 }
 /*EFFET WIGGLE*/
-.footer-info:hover {
+.footer_info:hover {
   animation: wiggle 0.8s;
   animation-iteration-count: infinite;
 }
