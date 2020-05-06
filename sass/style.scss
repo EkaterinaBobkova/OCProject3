@@ -109,32 +109,6 @@ a {
 
 
 
-  /* ARTICLE */
-.article {
-    width: 90%;
-    margin: 3em auto 4em;
-    text-align: justify;
-  }
-  @media (min-width: 768px) {
-    .article {
-      width: 80%;
-    }
-  }
-  @media (min-width: 992px) {
-    .article {
-      width: 70%;
-    }
-  }
-  @media (min-width: 1200px) {
-    .article {
-      width: 60%;
-    }
-  }
-  .article__section {
-    padding-bottom: 2em;
-  }
-  
-  
 
   /*ACCUEIL*/
 
@@ -148,6 +122,10 @@ a {
     padding: 2em;
     width: 100%;
     height: auto;
+
+    @media (min-width: 1200px) {
+      width: 60%;
+  }
   }
 
   .nav-carte-item
@@ -163,30 +141,41 @@ a {
     border-radius: 0.2em;
     line-height: 50px;
     box-shadow: 0 0 10px 0 rgba(152, 153, 151, 0.6);
+
+    @media (max-width: 738px) {
+      width: 65%;
+      height: 75vmin;
+  }
+  @media (min-width: 740px) {
+    width: 40%;
+    height: 75vmin;
+}
   }
 
-  @media (min-width: 1200px) {
-    .nav-carte {
-      width: 60%;
-    }
-  }
 
-  @media (max-width: 768px) {
-    .nav-carte-item {
-      width: 60%;
-      height: 75vmin;
-    }
+  .nav-carte-item-titre
+  {
+    font-size: 1.6rem;
+    @media (max-width: 375px) {
+      font-size: 0.9rem;
   }
-  @media (min-width: 770px) {
-    .nav-carte-item {
-      width: 40%;
-      height: 75vmin;
-    }
+  @media screen and (min-width:400px)
+  and (max-width:740px) {
+    font-size: 1.5rem;
+}
   }
+  
   .nav-carte-item-menu
   {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    @media (max-width: 375px) {
+      font-size: 0.7rem;
+  }
+  @media screen and (min-width:400px)
+  and (max-width:740px) {
+    font-size: 1rem;
+}
   }
   .nav-carte-item-menu1
   {
@@ -197,7 +186,6 @@ a {
   .nav-carte-item-menu1 .nav-carte-item-titre,
    {
   color:$color-title-menu1;
-  font-size: 1.5rem;
   font-family: 'Devonshire-Regular';
 }
 
@@ -214,7 +202,6 @@ a {
 
   .nav-carte-item-menu2 .nav-carte-item-titre {
     font-family: 'open_sanssemibold', Arial, sans-serif;
-    font-size: 1.115rem;
     color: $color-title-menu2;
     background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
   -webkit-background-clip: text;
@@ -235,7 +222,6 @@ a {
 
   .nav-carte-item-menu3 .nav-carte-item-titre {
     font-family: 'Parisienne-Regular'; 
-    font-size: 1.115rem;
     color: $color-title-menu3;
     background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
   -webkit-background-clip: text;
@@ -252,7 +238,6 @@ a {
   }
   .nav-carte-item-menu4 .nav-carte-item-titre {
     font-family: 'Tillana-Medium';  
-    font-size: 1.115rem;
     color: $color-title-menu4;
     background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
   -webkit-background-clip: text;
@@ -263,6 +248,30 @@ a {
     color: $color-title-menu4;
     
   }
+
+  
+  /* ARTICLE */
+.article {
+  width: 90%;
+  margin: 3em auto 4em;
+  text-align: justify;
+
+  @media (min-width: 768px) {
+    width: 80%;
+}
+@media (min-width: 992px) {
+  width: 70%;
+}
+@media (min-width: 1200px) {
+width: 60%;
+}
+}
+
+.article__section {
+  padding-bottom: 2em;
+}
+
+
 
     /*MENUS*/
     .carte-menu{
@@ -590,8 +599,8 @@ a {
   }
   .nav-carte-item-link:hover {
     opacity: 0.7;
-    -webkit-transform: scale(1.20);
-        -ms-transform: scale(1.20);
-            transform: scale(1.20);
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
   }
   
