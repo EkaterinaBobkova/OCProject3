@@ -177,14 +177,9 @@ li {
 }
 @media (max-width: 768px) {
   .nav-carte-item {
-    width: 60%;
+    width: 65%;
     height: 75vmin;
-  }
-}
-@media (min-width: 770px) {
-  .nav-carte-item {
-    width: 40%;
-    height: 75vmin;
+    font-size: 0.4em;
   }
 }
 .nav-carte-item-menu {
