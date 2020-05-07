@@ -1,16 +1,11 @@
+/*ACCUEIL*/
 
 .nav-carte
 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
   margin: 0 auto;
   padding: 2em;
   width: 100%;
@@ -22,20 +17,17 @@
 
 &_item
 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
   margin: 2em auto;
-  padding-top: 0;
-  width: 50%;
+  // padding-top: 0;
+  // width: 50%;
   border-radius: 0.2em;
   line-height: 50px;
   @include shadow;
@@ -116,8 +108,6 @@ background-color: $color-menu2;
 .nav-carte_item--titre{
   font-family: 'open_sanssemibold', Arial, sans-serif;
   color: $color-title-menu2;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d8852e), color-stop(#f6604b), color-stop(#ff367e), color-stop(#e633be), to(#905bfd));
-  background-image: -o-linear-gradient(left, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
   background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; 
@@ -136,8 +126,6 @@ background-color: $color-menu3;
 .nav-carte_item--titre{
   font-family: 'Parisienne-Regular'; 
   color: $color-title-menu3;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), color-stop(#004bea), color-stop(#0061f2), color-stop(#0074f7), to(#0887fb));
-  background-image: -o-linear-gradient(left, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
   background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -156,8 +144,6 @@ background-color: $color-menu4;
 .nav-carte_item--titre{
   font-family: 'Tillana-Medium';  
   color: $color-title-menu4;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4c9f42), color-stop(#68b650), color-stop(#84ce5f), color-stop(#a1e76e), to(#bfff7e));
-  background-image: -o-linear-gradient(left, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
   background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -171,4 +157,5 @@ background-color: $color-menu4;
 }
 
 }
+
 

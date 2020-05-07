@@ -1,3 +1,47 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6, h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: center;
+}
+
 /*VARIABLES*/
 /*MIXINS*/
 /*GENERAL*/
@@ -144,16 +188,11 @@ li {
   color: #fdcb46;
 }
 
+/*ACCUEIL*/
 .nav-carte {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-line-pack: justify;
   align-content: space-between;
   margin: 0 auto;
   padding: 2em;
@@ -166,10 +205,7 @@ li {
   }
 }
 .nav-carte_item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -178,8 +214,6 @@ li {
   align-content: center;
   text-align: center;
   margin: 2em auto;
-  padding-top: 0;
-  width: 50%;
   border-radius: 0.2em;
   line-height: 50px;
   box-shadow: 0 0 10px 0 rgba(152, 153, 151, 0.6);
@@ -256,8 +290,6 @@ li {
 .nav-carte_item--menu2 .nav-carte_item--titre {
   font-family: "open_sanssemibold", Arial, sans-serif;
   color: #c77412;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d8852e), color-stop(#f6604b), color-stop(#ff367e), color-stop(#e633be), to(#905bfd));
-  background-image: -o-linear-gradient(left, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
   background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -272,8 +304,6 @@ li {
 .nav-carte_item--menu3 .nav-carte_item--titre {
   font-family: "Parisienne-Regular";
   color: #0887fb;
-  background-image: -webkit-gradient(linear, left top, right top, from(#0431df), color-stop(#004bea), color-stop(#0061f2), color-stop(#0074f7), to(#0887fb));
-  background-image: -o-linear-gradient(left, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
   background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -288,8 +318,6 @@ li {
 .nav-carte_item--menu4 .nav-carte_item--titre {
   font-family: "Tillana-Medium";
   color: #5eae4b;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4c9f42), color-stop(#68b650), color-stop(#84ce5f), color-stop(#a1e76e), to(#bfff7e));
-  background-image: -o-linear-gradient(left, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
   background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -635,55 +663,6 @@ li {
 }
 .menu-table_items td:nth-of-type(2) {
   font-weight: bold;
-}
-
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-ul {
-  list-style: none;
-}
-
-button, input, select, textarea {
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-img, video {
-  height: auto;
-  max-width: 100%;
-}
-
-iframe {
-  border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td, th {
-  padding: 0;
-}
-
-td:not([align]), th:not([align]) {
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
