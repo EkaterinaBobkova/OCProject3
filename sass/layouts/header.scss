@@ -1,0 +1,19 @@
+/*HEADER*/
+
+.header, .btn--main, .footer
+{
+    background-color: $color-primary;
+    
+}
+
+.titre_header {
+  padding: 0.3em;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+
+  &--link {
+  color: $text-color-primary;
+  }
+  
+}
