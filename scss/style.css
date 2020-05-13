@@ -286,17 +286,20 @@ li {
 }
 .nav-carte_item--menu1 .nav-carte_item--titre {
   color: #3c1218;
+  font-weight: bold;
   font-family: "Devonshire-Regular";
 }
 .nav-carte_item--menu1 .nav-carte_item--menu {
   font-family: "open_sanssemibold", Arial, sans-serif;
   color: #3c1218;
+  font-weight: bold;
 }
 .nav-carte_item--menu2 {
   background-color: #fff5fe;
 }
 .nav-carte_item--menu2 .nav-carte_item--titre {
   font-family: "open_sanssemibold", Arial, sans-serif;
+  font-weight: bold;
   color: #c77412;
   background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
   -webkit-background-clip: text;
@@ -304,6 +307,7 @@ li {
 }
 .nav-carte_item--menu2 .nav-carte_item--menu {
   font-family: "open_sanssemibold", Arial, sans-serif;
+  font-weight: bold;
   color: #c77412;
 }
 .nav-carte_item--menu3 {
@@ -311,6 +315,7 @@ li {
 }
 .nav-carte_item--menu3 .nav-carte_item--titre {
   font-family: "Parisienne-Regular";
+  font-weight: bold;
   color: #0887fb;
   background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
   -webkit-background-clip: text;
@@ -318,6 +323,7 @@ li {
 }
 .nav-carte_item--menu3 .nav-carte_item--menu {
   font-family: "Tillana-Medium";
+  font-weight: bold;
   color: #0887fb;
 }
 .nav-carte_item--menu4 {
@@ -325,6 +331,7 @@ li {
 }
 .nav-carte_item--menu4 .nav-carte_item--titre {
   font-family: "Tillana-Medium";
+  font-weight: bold;
   color: #5eae4b;
   background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
   -webkit-background-clip: text;
@@ -332,6 +339,7 @@ li {
 }
 .nav-carte_item--menu4 .nav-carte_item--menu {
   font-family: "Tillana-Medium";
+  font-weight: bold;
   color: #5eae4b;
 }
 
@@ -515,6 +523,11 @@ li {
   -webkit-text-fill-color: transparent;
   padding: 10px;
 }
+@media (max-width: 488px) {
+  .carte-menu2 .carte-menu_header--titre {
+    font-size: 1.5rem;
+  }
+}
 .carte-menu2 .menu-table_div--titre {
   text-align: center;
   font-weight: bold;
@@ -547,6 +560,11 @@ li {
   -webkit-text-fill-color: transparent;
   padding: 10px;
 }
+@media (max-width: 488px) {
+  .carte-menu3 .carte-menu_header--titre {
+    font-size: 1.5rem;
+  }
+}
 .carte-menu3 .menu-table_div--titre {
   text-align: center;
   font-weight: bold;
@@ -569,6 +587,11 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 10px;
+}
+@media (max-width: 488px) {
+  .carte-menu4 .carte-menu_header--titre {
+    font-size: 1.5rem;
+  }
 }
 .carte-menu4 .menu-table_div--titre {
   text-align: center;
