@@ -97,7 +97,11 @@ font-size: 1rem;
   {
     color:$color-title-menu1;
     font-weight: bold;
-    font-family: 'Devonshire-Regular';
+    font-size: 2em;
+    font-family: Devonshire-Regular;
+    @media (max-width: 488px) {
+      font-size: 1.5em;
+      }
   }
 
   .nav-carte_item--menu{
@@ -111,7 +115,7 @@ font-size: 1rem;
 background-color: $color-menu2;
 
 .nav-carte_item--titre{
-  font-family: 'open_sanssemibold', Arial, sans-serif;
+  font-family: open_sanssemibold, Arial, sans-serif;
   font-weight: bold;
   color: $color-title-menu2;
   background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
@@ -131,7 +135,7 @@ background-color: $color-menu3;
 
 
 .nav-carte_item--titre{
-  font-family: 'Parisienne-Regular'; 
+  font-family: Parisienne-Regular; 
   font-weight: bold;
   color: $color-title-menu3;
   background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
@@ -140,7 +144,7 @@ background-color: $color-menu3;
 }
 
 .nav-carte_item--menu{
-  font-family: 'Tillana-Medium'; 
+  font-family: Tillana-Medium; 
   font-weight: bold;
   color: $color-title-menu3;
 }
