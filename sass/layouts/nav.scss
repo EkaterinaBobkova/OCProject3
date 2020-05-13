@@ -21,11 +21,13 @@
   flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
+      flex-direction: column;
           justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
   text-align: center;
   margin: 2em auto;
+  flex-direction: column;
   // padding-top: 0;
   // width: 50%;
   border-radius: 0.2em;
@@ -56,6 +58,7 @@
 @media (min-width: 740px) {
   width: 40%;
   height: 75vmin;
+  max-height: 750px;
 
 }
 
