@@ -121,6 +121,9 @@ background-color: $color-menu2;
   background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; 
+@media (max-width: 488px) {
+  font-size: 1em;
+  }
 }
 
 .nav-carte_item--menu{
@@ -141,6 +144,9 @@ background-color: $color-menu3;
   background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+@media (max-width: 488px) {
+  font-size: 1.2em;
+  }
 }
 
 .nav-carte_item--menu{
@@ -161,6 +167,9 @@ background-color: $color-menu4;
   background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+@media (max-width: 488px) {
+  font-size: 1.2em;
+  }
 }
 
 .nav-carte_item--menu{

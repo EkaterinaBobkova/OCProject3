@@ -303,6 +303,11 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 488px) {
+  .nav-carte_item--menu2 .nav-carte_item--titre {
+    font-size: 1em;
+  }
+}
 .nav-carte_item--menu2 .nav-carte_item--menu {
   font-family: "open_sanssemibold", Arial, sans-serif;
   font-weight: bold;
@@ -319,6 +324,11 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 488px) {
+  .nav-carte_item--menu3 .nav-carte_item--titre {
+    font-size: 1.2em;
+  }
+}
 .nav-carte_item--menu3 .nav-carte_item--menu {
   font-family: Tillana-Medium;
   font-weight: bold;
@@ -334,6 +344,11 @@ li {
   background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media (max-width: 488px) {
+  .nav-carte_item--menu4 .nav-carte_item--titre {
+    font-size: 1.2em;
+  }
 }
 .nav-carte_item--menu4 .nav-carte_item--menu {
   font-family: "Tillana-Medium";
