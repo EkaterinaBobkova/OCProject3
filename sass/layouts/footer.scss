@@ -1,64 +1,95 @@
 /* FOOTER */
 
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-   
-    padding: 0.5em 0;
-    left: 0;
-    bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+
+  padding: 0.5em 0;
+  left: 0;
+  bottom: 0;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  &_info {
+    padding: 0 2em 0.2em;
+    font-size: 1rem;
+
 
     @media (min-width: 768px) {
-      justify-content: space-between;
-      padding: 0;
+      padding: 0.8em 1em;
+      font-size: 1.120rem;
+
     }
 
-    &_info {
-      padding: 0 2em 0.2em;
-      font-size: 1rem;
-      
-  
-      @media (min-width: 768px) {
-          padding: 0.8em 1em;
-          font-size: 1.120rem;
-         
-      }
-  
-      @media (min-width: 992px) {
-          font-size: 1.20rem;
-         
-      }
-  
-      @media (min-width: 1200px) {
-          font-size: 1.360rem
-      }
-      &--link {
-        color: $text-color-primary;
+    @media (min-width: 992px) {
+      font-size: 1.20rem;
+
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.360rem
+    }
+
+    &--link {
+      color: $text-color-primary;
+    }
+
+    &:hover {
+      animation: wiggle 0.8s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes wiggle {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
       }
 
-      &:hover{
-        animation: wiggle 0.8s;
-        animation-iteration-count: infinite;
-       }
-       
-       @keyframes wiggle {
-         0% { transform: translate(1px, 1px) rotate(0deg); }
-         10% { transform: translate(-1px, -2px) rotate(-1deg); }
-         20% { transform: translate(-3px, 0px) rotate(1deg); }
-         30% { transform: translate(3px, 2px) rotate(0deg); }
-         40% { transform: translate(1px, -1px) rotate(1deg); }
-         50% { transform: translate(-1px, 2px) rotate(-1deg); }
-         60% { transform: translate(-3px, 1px) rotate(0deg); }
-         70% { transform: translate(3px, 1px) rotate(-1deg); }
-         80% { transform: translate(-1px, -1px) rotate(1deg); }
-         90% { transform: translate(1px, 2px) rotate(0deg); }
-         100% { transform: translate(1px, -2px) rotate(-1deg); }
-       }
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
     }
-    
   }
-  
-  
+
+}

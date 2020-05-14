@@ -1,31 +1,29 @@
 /*GENERAL*/
-body{
-    font-family:  Helvetica, Arial, sans-serif;
-    color: #000;
-    font-size: 17px;
-    background-color: #FFFF;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 17px;
+  background-color: #FFFF;
 
 }
 
 
-ul
-{
+ul {
   list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-  }
-  
-  button:focus {
-    outline: 0;
-  }
-  
-  li {
-    padding-top: 1.125rem;
-  }
+  text-decoration: none;
+}
 
-  .container
-  {
-      width: 100%;
-  }
+button:focus {
+  outline: 0;
+}
+
+li {
+  padding-top: 1.125rem;
+}
+
+.container {
+  width: 100%;
+}

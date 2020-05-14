@@ -95,6 +95,14 @@ li {
   font-family: "Tillana-Medium";
   src: url("./fonts/Tillana-Medium.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Baloo2-Regular";
+  src: url("./fonts/Baloo2-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Kalam-Regular";
+  src: url("./fonts/Kalam-Regular.ttf") format("truetype");
+}
 /*BOUTON*/
 .btn {
   text-align: center;
@@ -171,7 +179,9 @@ li {
   }
 }
 /*HEADER*/
-.header, .btn--main, .footer {
+.header,
+.btn--main,
+.footer {
   background-color: #579c87;
 }
 
@@ -288,7 +298,7 @@ li {
   }
 }
 .nav-carte_item--menu1 .nav-carte_item--menu {
-  font-family: "open_sanssemibold", Arial, sans-serif;
+  font-family: Devonshire-Regular;
   color: #3c1218;
   font-weight: bold;
 }
@@ -296,8 +306,7 @@ li {
   background-color: #fff5fe;
 }
 .nav-carte_item--menu2 .nav-carte_item--titre {
-  font-family: open_sanssemibold, Arial, sans-serif;
-  font-weight: bold;
+  font-family: open_sanssemibold;
   color: #c77412;
   background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
   -webkit-background-clip: text;
@@ -309,8 +318,7 @@ li {
   }
 }
 .nav-carte_item--menu2 .nav-carte_item--menu {
-  font-family: "open_sanssemibold", Arial, sans-serif;
-  font-weight: bold;
+  font-family: open_sanssemibold;
   color: #c77412;
 }
 .nav-carte_item--menu3 {
@@ -326,11 +334,11 @@ li {
 }
 @media (max-width: 488px) {
   .nav-carte_item--menu3 .nav-carte_item--titre {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 .nav-carte_item--menu3 .nav-carte_item--menu {
-  font-family: Tillana-Medium;
+  font-family: Parisienne-Regular;
   font-weight: bold;
   color: #0887fb;
 }
@@ -339,7 +347,6 @@ li {
 }
 .nav-carte_item--menu4 .nav-carte_item--titre {
   font-family: "Tillana-Medium";
-  font-weight: bold;
   color: #5eae4b;
   background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
   -webkit-background-clip: text;
@@ -352,7 +359,6 @@ li {
 }
 .nav-carte_item--menu4 .nav-carte_item--menu {
   font-family: "Tillana-Medium";
-  font-weight: bold;
   color: #5eae4b;
 }
 
@@ -501,7 +507,7 @@ li {
 }
 .carte-menu1 {
   background-color: #fcdfdb;
-  font-style: italic;
+  font-family: "Baloo2-Regular";
 }
 .carte-menu1 .carte-menu_header {
   font-family: "Devonshire-Regular";
@@ -516,8 +522,7 @@ li {
 }
 .carte-menu1 .menu-table_div--titre {
   text-align: center;
-  font-weight: bold;
-  font-family: "open_sanssemibold", Arial, sans-serif;
+  font-family: "Baloo2-Regular";
   color: #3c1218;
 }
 .carte-menu2 {
@@ -558,7 +563,7 @@ li {
 }
 .carte-menu3 {
   background-color: #f9f9f9;
-  font-style: italic;
+  font-family: "Kalam-Regular";
 }
 .carte-menu3 .carte-menu_header {
   font-family: "Parisienne-Regular";
@@ -581,12 +586,12 @@ li {
 .carte-menu3 .menu-table_div--titre {
   text-align: center;
   font-weight: bold;
-  font-family: "open_sanssemibold", Arial, sans-serif;
+  font-family: "Kalam-Regular";
   margin-top: 50px;
 }
 .carte-menu4 {
   background-color: #fdfffd;
-  font-style: italic;
+  font-family: "Kalam-Regular";
 }
 .carte-menu4 .carte-menu_header {
   font-family: "Tillana-Medium";
@@ -609,7 +614,7 @@ li {
 .carte-menu4 .menu-table_div--titre {
   text-align: center;
   font-weight: bold;
-  font-family: "open_sanssemibold", Arial, sans-serif;
+  font-family: "Kalam-Regular";
   margin-top: 50px;
 }
 .carte-menu_footer {

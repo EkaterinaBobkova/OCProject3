@@ -5,28 +5,28 @@
     margin-top: -1em;
     margin-bottom: 5em;
 
-    &--main{
-      margin: 0 auto;
-      padding: 0.6em 1.6em;
-      font-size: 1.30rem;
-      color: $text-color-primary;
-      border-radius: 0.5em;
+    &--main {
+        margin: 0 auto;
+        padding: 0.6em 1.6em;
+        font-size: 1.30rem;
+        color: $text-color-primary;
+        border-radius: 0.5em;
 
-      @media (min-width: 768px) {
-          font-size: 1.350rem;
-      }
+        @media (min-width: 768px) {
+            font-size: 1.350rem;
+        }
 
-      @media (min-width: 992px) {
-          font-size: 1.6rem;
-      }
+        @media (min-width: 992px) {
+            font-size: 1.6rem;
+        }
 
-      @media (min-width: 1200px) {
-          font-size: 1.710rem;
-      }
+        @media (min-width: 1200px) {
+            font-size: 1.710rem;
+        }
     }
-  }
+}
 
-  .one {
+.one {
     opacity: 0;
     -webkit-animation: dots 1.3s infinite;
     -webkit-animation-delay: 0.0s;
@@ -38,30 +38,42 @@
     opacity: 0;
     -webkit-animation: dots 1.3s infinite;
     -webkit-animation-delay: 0.2s;
-      animation: dots 1.3s infinite;
-      animation-delay: 0.2s;
+    animation: dots 1.3s infinite;
+    animation-delay: 0.2s;
 }
 
 .three {
     opacity: 0;
     -webkit-animation: dots 1.3s infinite;
     -webkit-animation-delay: 0.3s;
-     animation: dots 1.3s infinite;
-     animation-delay: 0.3s;
+    animation: dots 1.3s infinite;
+    animation-delay: 0.3s;
 }
 
 @-webkit-keyframes dots {
-      0% { opacity: 0; }
-     50% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes dots {
-      0% { opacity: 0; }
-     50% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
-
-
-  
-  

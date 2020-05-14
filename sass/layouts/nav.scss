@@ -1,7 +1,6 @@
 /*ACCUEIL*/
 
-.nav-carte
-{
+.nav-carte {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,173 +12,172 @@
 
   @media (min-width: 1200px) {
     width: 60%;
-}
-
-&_item
-{
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      flex-direction: column;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  text-align: center;
-  margin: 2em auto;
-  flex-direction: column;
-  // padding-top: 0;
-  // width: 50%;
-  border-radius: 0.2em;
-  line-height: 50px;
-  @include shadow;
-
-  &--link {
-    opacity: 1.2;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
   }
-  &--link:hover {
-    opacity: 0.7;
-    -webkit-transform: scale(1.10);
-        -ms-transform: scale(1.10);
-            transform: scale(1.10);
-  }
-  
 
-  @media (max-width: 738px) {
-    width: 65%;
-    height: 75vmin;
-}
-@media (min-width: 740px) {
-  width: 40%;
-  height: 75vmin;
-  max-height: 750px;
+  &_item {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    flex-direction: column;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    text-align: center;
+    margin: 2em auto;
+    flex-direction: column;
+    // padding-top: 0;
+    // width: 50%;
+    border-radius: 0.2em;
+    line-height: 50px;
+    @include shadow;
 
-}
+    &--link {
+      opacity: 1.2;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+    }
 
-&--titre{
-font-size: 1.5rem;
-  @media (max-width: 375px) {
-    font-size: 0.9rem;
-}
-@media screen and (min-width:400px)
-and (max-width:740px) {
-  font-size: 1.5rem;
-}
-
-}
-&--menu{
-text-transform: uppercase;
-font-size: 1.4rem;
-
-
-@media (max-width: 375px) {
-font-size: 0.7rem;
-}
-@media screen and (min-width:400px)
-and (max-width:740px) {
-font-size: 1rem;
-}
-}
+    &--link:hover {
+      opacity: 0.7;
+      -webkit-transform: scale(1.10);
+      -ms-transform: scale(1.10);
+      transform: scale(1.10);
+    }
 
 
-&--menu1
-{
-  background-color: $color-menu1;
-  line-height: 35px;
+    @media (max-width: 738px) {
+      width: 65%;
+      height: 75vmin;
+    }
 
-  .nav-carte_item--titre
-  {
-    color:$color-title-menu1;
-    font-weight: bold;
-    font-size: 2em;
-    font-family: Devonshire-Regular;
-    @media (max-width: 488px) {
-      font-size: 1.5em;
+    @media (min-width: 740px) {
+      width: 40%;
+      height: 75vmin;
+      max-height: 750px;
+
+    }
+
+    &--titre {
+      font-size: 1.5rem;
+
+      @media (max-width: 375px) {
+        font-size: 0.9rem;
       }
+
+      @media screen and (min-width:400px) and (max-width:740px) {
+        font-size: 1.5rem;
+      }
+
+    }
+
+    &--menu {
+      text-transform: uppercase;
+      font-size: 1.4rem;
+
+
+      @media (max-width: 375px) {
+        font-size: 0.7rem;
+      }
+
+      @media screen and (min-width:400px) and (max-width:740px) {
+        font-size: 1rem;
+      }
+    }
+
+
+    &--menu1 {
+      background-color: $color-menu1;
+      line-height: 35px;
+
+      .nav-carte_item--titre {
+        color: $color-title-menu1;
+        font-weight: bold;
+        font-size: 2em;
+        font-family: Devonshire-Regular;
+
+        @media (max-width: 488px) {
+          font-size: 1.5em;
+        }
+      }
+
+      .nav-carte_item--menu {
+        font-family: Devonshire-Regular;
+        color: $color-title-menu1;
+        font-weight: bold;
+      }
+    }
+
+    &--menu2 {
+      background-color: $color-menu2;
+
+      .nav-carte_item--titre {
+        font-family: open_sanssemibold;
+        color: $color-title-menu2;
+        background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media (max-width: 488px) {
+          font-size: 1em;
+        }
+      }
+
+      .nav-carte_item--menu {
+        font-family: open_sanssemibold;
+        color: $color-title-menu2;
+      }
+    }
+
+    &--menu3 {
+      background-color: $color-menu3;
+
+
+      .nav-carte_item--titre {
+        font-family: Parisienne-Regular;
+        font-weight: bold;
+        color: $color-title-menu3;
+        background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media (max-width: 488px) {
+          font-size: 1em;
+        }
+      }
+
+      .nav-carte_item--menu {
+        font-family: Parisienne-Regular;
+        font-weight: bold;
+        color: $color-title-menu3;
+      }
+    }
+
+    &--menu4 {
+      background-color: $color-menu4;
+
+
+      .nav-carte_item--titre {
+        font-family: 'Tillana-Medium';
+        color: $color-title-menu4;
+        background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media (max-width: 488px) {
+          font-size: 1.2em;
+        }
+      }
+
+      .nav-carte_item--menu {
+        font-family: 'Tillana-Medium';
+        color: $color-title-menu4;
+      }
+    }
   }
 
-  .nav-carte_item--menu{
-    font-family: 'open_sanssemibold', Arial, sans-serif;
-    color:$color-title-menu1;
-    font-weight: bold;
-  }
 }
-
-&--menu2{
-background-color: $color-menu2;
-
-.nav-carte_item--titre{
-  font-family: open_sanssemibold, Arial, sans-serif;
-  font-weight: bold;
-  color: $color-title-menu2;
-  background-image: linear-gradient(to right, #d8852e, #f6604b, #ff367e, #e633be, #905bfd);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; 
-@media (max-width: 488px) {
-  font-size: 1em;
-  }
-}
-
-.nav-carte_item--menu{
-  font-family: 'open_sanssemibold', Arial, sans-serif;
-  font-weight: bold;
-  color: $color-title-menu2;
-}
-}
-
-&--menu3 {
-background-color: $color-menu3;
-
-
-.nav-carte_item--titre{
-  font-family: Parisienne-Regular; 
-  font-weight: bold;
-  color: $color-title-menu3;
-  background-image: linear-gradient(to right, #0431df, #004bea, #0061f2, #0074f7, #0887fb);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-@media (max-width: 488px) {
-  font-size: 1.2em;
-  }
-}
-
-.nav-carte_item--menu{
-  font-family: Tillana-Medium; 
-  font-weight: bold;
-  color: $color-title-menu3;
-}
-}
-
-&--menu4{
-background-color: $color-menu4;
-
-
-.nav-carte_item--titre{
-  font-family: 'Tillana-Medium';  
-  font-weight: bold;
-  color: $color-title-menu4;
-  background-image: linear-gradient(to right, #4c9f42, #68b650, #84ce5f, #a1e76e, #bfff7e);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-@media (max-width: 488px) {
-  font-size: 1.2em;
-  }
-}
-
-.nav-carte_item--menu{
-  font-family: 'Tillana-Medium';  
-  font-weight: bold;
-  color: $color-title-menu4;
-}
-}
-}
-
-}
-
-

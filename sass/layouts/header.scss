@@ -1,9 +1,10 @@
 /*HEADER*/
 
-.header, .btn--main, .footer
-{
-    background-color: $color-primary;
-    
+.header,
+.btn--main,
+.footer {
+  background-color: $color-primary;
+
 }
 
 .titre_header {
@@ -13,7 +14,7 @@
   font-weight: 900;
 
   &--link {
-  color: $text-color-primary;
+    color: $text-color-primary;
   }
-  
+
 }
