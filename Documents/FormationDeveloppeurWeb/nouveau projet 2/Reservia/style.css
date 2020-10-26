@@ -1,0 +1,790 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (min-width: 1390px) {
+
+    header,
+    #section1,
+    #section2,
+    #section3 {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+header,
+#section1,
+#section2,
+#section3 {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+header h2,
+header p {
+    margin-left: 15.7%;
+}
+
+#maincontainer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#Titre {
+
+    width: auto;
+    line-height: 60%;
+    margin-top: 2%;
+    margin-left: 15.7%;
+
+
+}
+
+
+
+#Titre img {
+    margin-bottom: 3%;
+}
+
+nav {
+    display: flex;
+    width: 30%;
+    color: #0065FC;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0065FC;
+}
+
+.navig1 {
+
+    padding-left: 10%;
+    padding-top: 7%;
+
+}
+
+.navig2 {
+
+    border-top: #0065FC solid 1px;
+    padding-top: 7%;
+
+    width: 30%;
+    text-align: center;
+    margin-right: -4%;
+
+}
+
+
+#container2 {
+
+    display: flex;
+    width: 70%;
+    margin-right: auto;
+    height: 100px;
+    align-items: center;
+
+}
+
+#container2 .fas {
+    background-color: #F2F2F2;
+    border: #F2F2F2 solid 1px;
+    border-radius: 15px 0% 0% 15px;
+    font-size: 19px;
+    padding: 33%;
+    margin-right: 20px;
+}
+
+.search {
+    height: 45px;
+    border: solid 1px #F2F2F2;
+    width: 140%;
+}
+
+#recherche1 {
+    margin-right: 0px;
+}
+
+#recherche3 {
+    margin-left: 0px;
+}
+
+button {
+    height: 45px;
+    border-radius: 0% 15px 15px 0%;
+    border: none;
+    width: 120%;
+    font-size: 1em;
+    background-color: #0065FC;
+    margin-left: 60%;
+    color: rgb(255, 255, 255);
+}
+
+#section1 {
+    width: 65%;
+
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#filter {
+    list-style: none;
+
+    padding-left: 0px;
+    display: flex;
+
+    align-items: center;
+    font-weight: bold;
+}
+
+.filter1,
+.filter2,
+.filter3,
+.filter4 {
+    background-color: white;
+
+    border: #e7e7e7 solid 2px;
+    border-radius: 25px;
+    margin-left: 2%;
+}
+
+.filter1 {
+    width: 13.7%;
+}
+
+.filter2 {
+    width: 10.5%;
+}
+
+.filter3 {
+    width: 12.2%;
+}
+
+.filter4 {
+    width: 17%;
+}
+
+.filter1 .fas,
+.filter2 .fas,
+.filter3 .fas,
+.filter4 .fas {
+    background-color: #DEEBFF;
+    font-size: 100%;
+    color: #0065FC;
+    margin-left: 0px;
+    position: relative;
+    text-align: left;
+
+}
+
+.filter1 .fas {
+    margin-right: 6%;
+    padding: 6.5%;
+    border-radius: 25px;
+}
+
+.filter2 .fas {
+    padding: 7.5%;
+    border-radius: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 110%;
+    margin-right: 10%;
+}
+
+.filter3 .fas {
+    padding: 7%;
+    border-radius: 25px;
+    font-size: 100%;
+    margin-right: 7%;
+    padding-right: 7%;
+}
+
+.filter4 .fas {
+    padding: 5.5%;
+    border-radius: 25px;
+    font-size: 100%;
+    margin-right: 6%;
+}
+
+
+
+#help {
+    background-color: white;
+    border-radius: 600px;
+    color: #0065FC;
+    font-size: 15px;
+    padding: 0.5% 1% 0.5% 1%;
+    border: #F2F2F2 solid 2px;
+}
+
+
+#container4 {
+
+
+    display: flex;
+
+    padding: 0% 0% 0% 0%;
+}
+
+#container4 img {
+
+    width: 260px;
+    height: 140px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+#container5 {
+
+
+    display: flex;
+
+    padding: 3% 0% 2.5% 0%;
+}
+
+#container5 img {
+
+    width: 260px;
+    height: 140px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+#tab1 {
+    margin-left: auto;
+    margin-right: auto;
+
+    border: white solid 4px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    -webkit-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    line-height: 160%;
+}
+
+#container3 {
+    background-color: #F2F2F2;
+    width: 65%;
+    border-radius: 30px 30px 30px 30px;
+}
+
+#hebcontainer3 {
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+}
+
+
+#showcont3 {
+    padding-bottom: 3%;
+    padding-left: 3.5%;
+}
+
+#container6 {
+    background-color: #F2F2F2;
+    width: 30%;
+    padding-bottom: 0%;
+    border-radius: 30px 30px 30px 30px;
+    padding-top: 1%;
+}
+
+#container6 img {
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin-right: 5%;
+    border-radius: 30px 0px 0px 30px;
+}
+
+#section2 {
+    margin-bottom: 80px;
+    margin-left: 15.7%;
+    margin-right: 10%;
+}
+
+
+#container7 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#tab2 {
+    margin-top: 3%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    height: 160px;
+    border-radius: 30px 30px 30px 30px;
+    border: white solid 4px;
+    background-color: white;
+    -webkit-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+}
+
+
+
+#titrepop {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 4%;
+}
+
+
+#titrepop .fas {
+    font-size: 150%;
+}
+
+.spantab2 {
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 2%;
+
+}
+
+.titrehotel {
+    font-weight: 900;
+    font-size: 100%;
+}
+
+.spantab1 {
+    color: #0065FC;
+}
+
+.spantab3 {
+    color: #c4c3c3;
+    margin-left: 0px;
+}
+
+
+
+#section3 {
+    margin-left: 15.7%;
+    margin-right: 10%;
+}
+
+#container8 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+#container8 img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+
+#container8 h3 {
+    margin-left: 25px;
+}
+
+
+#vieuporte2,
+#parce2,
+#fortpome,
+#ilesfrioule,
+#garde,
+#longchamp {
+    border-radius: 30px 30px 30px 30px;
+    -webkit-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    background-color: white;
+}
+
+#Vieuxport {
+    width: 45%;
+    height: 100%;
+    margin-right: 2.5%;
+}
+
+#vieuxporte {
+    height: 500px;
+}
+
+#vieuxporte2 {
+    padding-bottom: 10px;
+    border-radius: 30px 30px 30px 30px;
+    -webkit-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+    background-color: white;
+}
+
+
+
+
+#Parcnatio {
+    width: 45%;
+    margin-right: 2.5%;
+    height: 100%;
+}
+
+#parce {
+    height: 500px;
+}
+
+
+#parce2 {
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+#Fortpom {
+    width: 35%;
+    height: 100%;
+    margin-right: 2.5%;
+}
+
+#fortpome {
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+#fortpome img {
+    height: 215px;
+}
+
+
+#ilesfrioule {
+    height: 100%;
+    padding-bottom: 10px;
+    margin-top: 33px;
+}
+
+
+#ilesfrioule img {
+    height: 180px;
+}
+
+#Notredame {
+    width: 35%;
+    height: 100%;
+}
+
+#garde {
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+#garde img {
+    height: 190px;
+}
+
+
+#longchamp {
+    height: 100%;
+    padding-bottom: 5px;
+    margin-top: 33px;
+}
+
+
+#longchamp img {
+    height: 190px;
+}
+
+
+#container11 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+
+    margin-left: 15.7%;
+    margin-right: 10%;
+}
+
+#aPropos {
+    width: 20%;
+}
+
+#Noshebergements {
+    width: 20%;
+}
+
+#Assistance {
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1690px) {
+    .titrehotel {
+        height: 70px;
+    }
+
+
+
+
+
+
+
+
+    nav {
+        display: flex;
+
+    }
+
+
+
+
+
+
+    .filter1 {
+        width: 147px;
+        font-size: 80%;
+    }
+
+    .filter2 {
+        width: 105px;
+        font-size: 80%;
+        margin-left: 3%;
+    }
+
+    .filter3 {
+        width: 142px;
+        font-size: 80%;
+        margin-left: 3%;
+    }
+
+    .filter4 {
+        width: 180px;
+        font-size: 80%;
+        margin-left: 3%;
+    }
+
+
+    #container4 img {
+
+        width: 100%;
+        height: 140px;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+
+    #tab1 {
+        width: 28%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
+    #container5 img {
+
+        width: 100%;
+        height: 140px;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+
+
+    #container6 img {
+        width: 50%;
+    }
+
+
+    #tab2 {
+        font-size: 85%;
+        line-height: 95%;
+    }
+}
+
+
+
+
+}
+
+@media screen and (max-width: 1625px) {
+    #section3 h3 {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 1390px) {
+
+    header,
+    #section1,
+    #section2,
+    #section3,
+    #container11 {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+}
+
+@media screen and (max-width: 1284px) {
+
+
+    nav {
+        margin-right: 10%;
+    }
+
+    .navi2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+
+
+    .titrehotel {
+        height: 70px;
+    }
+
+}
+
+
+@media screen and (max-width: 990px) {
+
+
+    #filter {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #filter h3 {
+        font-size: 85%;
+    }
+
+    #container7 {
+        font-size: 80%;
+    }
+
+    #container7 .fas {
+        font-size: 85%;
+    }
+
+    .filter1,
+    .filter2,
+    .filter3,
+    .filter4 {
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 70%;
+    }
+
+
+    .filter1 {
+        width: 257px;
+        margin-left: 5%;
+    }
+
+    .filter2 {
+        width: 185px;
+        margin-left: 1%;
+    }
+
+    .filter3 {
+        width: 252px;
+        margin-left: 1%;
+    }
+
+    .filter4 {
+        width: 340px;
+        margin-left: 1%;
+    }
+
+
+
+    nav {
+        margin-right: 14%;
+    }
+
+
+    .filter1 .fas,
+    .filter2 .fas,
+    .filter3 .fas,
+    .filter4 .fas {
+        font-size: 100%;
+    }
+
+    #container4 img {
+
+        height: 100px;
+
+    }
+
+    #container5 img {
+
+        height: 100px;
+
+    }
+
+
+    .titrehotel {
+        line-height: 150%;
+    }
+
+    #tab2 img {
+        height: 140px;
+    }
+
+    #tab2 {
+        margin-left: auto;
+        margin-right: auto;
+
+        height: 140px;
+        font-size: 100%;
+    }
+
+    #tab2 .fas {
+        margin-bottom: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    #container2 {
+        width: 120%;
+        margin-left: auto;
+    }
+
+
+    #recherche2 {
+        width: 900px;
+    }
+
+    #filter {
+        flex-direction: column;
+    }
+}
